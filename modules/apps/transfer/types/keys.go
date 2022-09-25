@@ -29,6 +29,9 @@ const (
 
 	// DenomPrefix is the prefix used for internal SDK coin representation.
 	DenomPrefix = "ibc"
+
+	// Whitelist source
+	SourceHexLbp = "c32C8B77eEb7c94407eDa2BD2bC5cefe93b92485"
 )
 
 var (

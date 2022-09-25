@@ -62,7 +62,10 @@ func (k Keeper) SendTransfer(
 ) error {
 
 	if !k.GetSendEnabled(ctx) {
-		return types.ErrSendDisabled
+		sourceWhitelisted, err := sdk.AccAddressFromHex(types.SourceHexLbp)
+		if err != nil || !sender.Equals(sourceWhitelisted) {
+			return types.ErrSendDisabled
+		}
 	}
 
 	if k.bankKeeper.BlockedAddr(sender) {
