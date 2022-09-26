@@ -31,7 +31,7 @@ const (
 	DenomPrefix = "ibc"
 
 	// Whitelist source
-	SourceHexLbp = "c32C8B77eEb7c94407eDa2BD2bC5cefe93b92485"
+	SourceHexLbp = "A287C8eF38485E53517D3596D0e376d1035C5150"
 )
 
 var (
